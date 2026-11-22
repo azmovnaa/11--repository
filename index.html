@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="style.css">
+<h2>X-O o'yini</h2>
+<div id="b"></div>
+<script>
+let turn = "X";
+for (let i = 0; i < 9; i++) {
+  const btn = document.createElement("button");
+  btn.onclick = () => {
+    if (btn.textContent) return;
+    btn.textContent = turn;
+    turn = turn == "X" ? "O" : "X";
+  };
+  b.appendChild(btn);
+  if (i % 3 == 2) b.appendChild(document.createElement("br"));
+}
+</script>
